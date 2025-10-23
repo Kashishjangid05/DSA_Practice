@@ -1,12 +1,11 @@
-// program to insert node at the beginning (circular double linked list)
+// program to delete node at the beginning (circular single linked list)
 #include <iostream>
 using namespace std;
 
 struct node
 {
     int data;
-    struct node *next;
-    struct node *prev;
+    struct node *link;
 };
 
 int main()
@@ -15,7 +14,6 @@ int main()
     struct node *start = NULL;
     struct node *ptr = NULL;
     struct node *newnode = NULL;
-    struct node *last = NULL;
 
     // -----------------insertion----------------------
     cout << "enter how many nodes you want to insert";
@@ -28,30 +26,36 @@ int main()
 
         if (start == NULL)
         {
-            newnode->next = newnode;
-            newnode -> prev = newnode;
+            newnode->link = newnode;
             start = newnode;
-            last = newnode;
         }
         else
         {
-            last -> next = newnode;
-            newnode -> next = start;
-            newnode -> prev = last;
-            start -> prev = newnode;
+            ptr = start;
+            while (ptr->link != start)
+            {
+                ptr = ptr->link;
+            }
+            newnode->link = start;
+            ptr->link = newnode;
             start = newnode;
         }
     }
+    ptr = start;
     // ---------------------display---------------------
     cout << "Print data and link : " << endl;
-    if(start != NULL){
-        ptr = start;
-        do{
-            cout << "Data : " << ptr -> data;
-            cout << " |Next : " << ptr -> next;
-            cout << " |Prev : " << ptr -> prev << endl; 
-            ptr = ptr -> next; 
-        }while(ptr != start);
+    if (start != NULL)
+    {
+        do
+        {
+            {
+                cout << "Data : " << ptr->data << "| Link : " << ptr->link << endl;
+                ptr = ptr->link;
+            }
+        } while (ptr != start);
     }
+
+    //-----------------deletion--------------------
+
     return 0;
 }
