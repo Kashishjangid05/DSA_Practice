@@ -14,6 +14,7 @@ int main()
     struct node *start = NULL;
     struct node *ptr = NULL;
     struct node *newnode = NULL;
+    struct node *del = NULL;
 
     // -----------------insertion----------------------
     cout << "enter how many nodes you want to insert";
@@ -43,7 +44,7 @@ int main()
     }
     ptr = start;
     // ---------------------display---------------------
-    cout << "Print data and link : " << endl;
+    cout << "Linked list before deletion : " << endl;
     if (start != NULL)
     {
         do
@@ -56,6 +57,39 @@ int main()
     }
 
     //-----------------deletion--------------------
-
+    if (start == NULL)
+    {
+        cout << "empty list" << endl;
+    }
+    else if (start -> link == start){
+        cout << "deleted element: " << start -> data << endl;
+        delete start;
+        start = NULL;
+    }
+    else
+    {
+        ptr = start;
+        while (ptr->link != start)
+        {
+            ptr = ptr->link;
+        }
+        del = start;
+        start = start->link;
+        ptr->link = start;
+        cout << "deleted node: " << del->data << endl;
+        delete del;
+    }
+    // -----------------display---------------
+    cout << "linked list after deletion:" << endl;
+    ptr = start;
+    if (start != NULL)
+    {
+        do
+        {
+            cout << "Data : " << ptr->data;
+            cout << "|Link : " << ptr->link << endl;
+            ptr = ptr->link;
+        } while (ptr != start);
+    }
     return 0;
 }
