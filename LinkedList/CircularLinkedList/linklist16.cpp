@@ -42,7 +42,7 @@ int main()
             start = newnode;
         }
     }
-    ptr = start;
+    ptr = start;    
     // ---------------------display---------------------
     cout << "Linked list before deletion : " << endl;
     if (start != NULL)
