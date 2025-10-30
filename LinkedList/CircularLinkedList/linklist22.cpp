@@ -95,7 +95,7 @@ int main()
         ptr->link = newnode;
     }
 
-    // ---------------------display------------------
+    // ---------------------display----------------
     cout << "Linked list : " << endl;
     ptr = start;
     if(start != NULL){
