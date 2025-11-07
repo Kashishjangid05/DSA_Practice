@@ -1,4 +1,4 @@
-//Program of binary search
+//Program of binary search in c++
 #include<iostream>
 using namespace std;
 
