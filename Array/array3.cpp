@@ -1,5 +1,5 @@
 //WAP to print sum of all elements of array
-
+// 
 #include<iostream>
 using namespace std;
 
