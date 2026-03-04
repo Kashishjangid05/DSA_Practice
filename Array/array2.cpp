@@ -1,7 +1,7 @@
 //WAP to print reverse array elements
 #include<iostream>
 using namespace std;
-
+// 
 int main(){
    int i, arr[5];
    cout<< "enter array values\n";
