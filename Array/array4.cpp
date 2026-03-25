@@ -1,7 +1,7 @@
 //WAP to insert an element at beginning of an array
 #include<iostream>
 using namespace std;
-// 
+
 int main(){
    int i, arr[100], n , newElement;
    cout<< "enter value of n\n";
