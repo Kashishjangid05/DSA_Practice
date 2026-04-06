@@ -1,7 +1,7 @@
 // program to insert node at given position
 #include <iostream>
 using namespace std;
-// 
+
 struct node
 {
     int data;
