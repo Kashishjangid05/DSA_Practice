@@ -1,5 +1,5 @@
 // program to insert node at the beginning (circular single linked list)
-// 
+
 #include <iostream>
 using namespace std;
 
