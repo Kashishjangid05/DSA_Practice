@@ -1,7 +1,7 @@
 //WAP to print array elements
 #include<iostream>
 using namespace std;
-//
+
 int main(){
    int arr[5],i;
    cout<<"enter array values\n";
@@ -14,4 +14,4 @@ int main(){
    }
 return 0;
 }
-// 
+
