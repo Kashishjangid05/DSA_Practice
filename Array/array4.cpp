@@ -18,7 +18,7 @@ int main(){
    for(i=n;i>=0;i--){
     arr[i] = arr[i - 1];
    }
-// 
+
    arr[0]= newElement;
    n++;
 
