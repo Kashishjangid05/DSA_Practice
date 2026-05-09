@@ -11,7 +11,7 @@ int main(){
    for(i=0;i<n;i++){
     cin>> arr[i];
    }
-
+// 
    cout<<"enter new element to insert";
    cin>> newElement;
 
