@@ -1,4 +1,4 @@
-9//WAP to print reverse array elements
+//WAP to print reverse array elements
 #include<iostream>
 using namespace std;
 
@@ -14,4 +14,4 @@ int main(){
    }
 return 0;
 }
-
+// 
