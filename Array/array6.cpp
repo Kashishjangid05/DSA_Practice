@@ -1,7 +1,7 @@
 //WAP to find max and min element in an array
 #include<iostream>
 using namespace std;
-
+// 
 int main(){
     int i , arr[10], max , min;
     cout<< "enter array values \n";
