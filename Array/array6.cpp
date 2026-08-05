@@ -23,5 +23,3 @@ int main(){
     cout<< "minimum value of array = "<< min << endl;
 return 0;
 }
-// 
-// 
