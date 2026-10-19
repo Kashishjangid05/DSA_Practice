@@ -1,4 +1,4 @@
-////WAP to insert an element at beginning of an array
+//WAP to insert an element at beginning of an array
 #include<iostream>
 using namespace std;
 
